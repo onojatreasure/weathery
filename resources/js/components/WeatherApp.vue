@@ -76,7 +76,7 @@
 
             placesAutocomplete.on('change', (e) => {
                 $address.textContent = e.suggestion.value
-                console.log(e.suggestion);
+                //console.log(e.suggestion);
                 this.location.name = `${e.suggestion.name}, ${e.suggestion.country}`
                 this.location.lat = e.suggestion.latlng.lat
                 this.location.lng = e.suggestion.latlng.lng
